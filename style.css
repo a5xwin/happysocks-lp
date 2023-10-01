@@ -10,12 +10,23 @@ html,body{
     height: 100%;
 }
 
+@font-face{
+    font-family: google;
+    src:url(google.ttf);
+}
+
+@font-face{
+    font-family: googlebold;
+    src:url(googlebold.ttf);
+}
+
+
 
 #main{
     height: 100%;
     width: 100%;
     padding: 0;
-    background-color: antiquewhite;
+    background-color: rgb(253, 229, 199);
     position: relative;
 }
 
@@ -23,13 +34,62 @@ html,body{
 
     height: 100px;
     width: 100%;
-    background-color: brown;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-bottom: 2px solid black;
 
 }
 
 #nav h5{
-    
+
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: google;
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 4px 9px;
+    margin: 0px 9px;
+
+}
+
+#center{
+
+    height: 86.2%;
+    width: 100%;
+    background-color: greenyellow;
+    position: relative;
+    padding: 10px 20px;
+}
+
+
+#center h1{
+
+    font-size: 110px;
+    font-family: googlebold;
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    white-space: nowrap;
+    transform: translate(-50%,0);
+    font-style: italic;
+    z-index: 999;
+
+}
+
+
+#center h2{
+
+    font-size: 80px;
+    font-family: googlebold;
+    left: 49%;
+    top: -4px;
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    white-space: nowrap;
+    transform: translate(-50%,0);
+    font-style: italic;
+
 }
