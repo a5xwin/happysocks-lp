@@ -16,17 +16,22 @@ html,body{
 }
 
 @font-face{
+    font-family: monument;
+    src:url(Monument.ttf);
+}
+
+@font-face{
     font-family: googlebold;
     src:url(googlebold.ttf);
 }
-
 
 
 #main{
     height: 100%;
     width: 100%;
     padding: 0;
-    background-color: rgb(253, 229, 199);
+    /*background-color: rgb(253, 229, 199);*/
+    background-color: rgb(187, 221, 135);
     position: relative;
 }
 
@@ -58,7 +63,7 @@ html,body{
 
     height: 86.2%;
     width: 100%;
-    background-color: greenyellow;
+    background-color: rgb(171, 231, 111);
     position: relative;
     padding: 10px 20px;
 }
@@ -66,30 +71,121 @@ html,body{
 
 #center h1{
 
-    font-size: 110px;
-    font-family: googlebold;
+    font-size: 90px;
+    font-family: monument;
     text-transform: uppercase;
     position: absolute;
     left: 50%;
     white-space: nowrap;
     transform: translate(-50%,0);
     font-style: italic;
+    font-weight: 900;
     z-index: 999;
 
 }
 
-
 #center h2{
 
-    font-size: 80px;
-    font-family: googlebold;
-    left: 49%;
-    top: -4px;
+    font-size: 90px;
+    font-family: monument;
     text-transform: uppercase;
     position: absolute;
-    left: 50%;
+    left: 49.5%;
+    top: 2px;
     white-space: nowrap;
     transform: translate(-50%,0);
     font-style: italic;
+    font-weight: 900;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 2px;
+    color: transparent;
 
 }
+
+
+#image{
+    position: absolute;
+    height: 40%;
+    width: 60%;
+    top: 40%;
+    left: 20%;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+#image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center 83%;
+    border-radius: 50%;
+}
+
+#sock1{
+    height: 150px;
+    width: 150px;
+    background-image: url(https://www.stance.com/on/demandware.static/-/Sites-GlobalProductCatalog/default/dw4062fbc3/images/products/A556A22BAR_WHT.jpg);
+    border: 2px solid black;
+    background-size: cover;
+    background-position: bottom;
+    position: absolute;
+    top: 180px;
+    left: 300px;
+    transform:rotate(8deg)
+
+}
+
+#sock2{
+    height: 150px;
+    width: 150px;
+    background-image: url(https://www.stance.com/on/demandware.static/-/Sites-GlobalProductCatalog/default/dw4062fbc3/images/products/A556A22BAR_WHT.jpg);
+    border: 2px solid black;
+    background-size: cover;
+    background-position: bottom;
+    position: absolute;
+    top: 170px;
+    left: 310px;
+    transform:rotate(13deg)
+
+}
+
+
+#sock3{
+    height: 150px;
+    width: 150px;
+    background-image: url(https://www.urbansurfer.co.uk/images/stance-the-simpsons-homer-socks-p9388-57375_image.jpg);
+    border: 2px solid black;
+    background-size: cover;
+    background-position: bottom;
+    position: absolute;
+    top: 360px;
+    left: 1100px;
+    transform:rotate(-8deg)
+
+}
+
+#sock4{
+    height: 150px;
+    width: 150px;
+    background-image: url(https://www.urbansurfer.co.uk/images/stance-the-simpsons-homer-socks-p9388-57375_image.jpg);
+    border: 2px solid black;
+    background-size: cover;
+    background-position: bottom;
+    position: absolute;
+    top: 360px;
+    left: 1100px;
+    transform:rotate(0deg)
+
+}
+
+#text{
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-family: googlebold;
+    font-size: 25px;
+    position: absolute;
+    top: 560px;
+    left: 10px;
+}
+
