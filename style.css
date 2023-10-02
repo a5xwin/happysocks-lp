@@ -39,9 +39,9 @@ html,body{
 
     height: 100px;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: flex;  /*Used to display child elements horizontally instead of vertically (it is used in parent div)*/
+    align-items: center; /*Used to allign elements in the div vertically*/
+    justify-content: center; /*Used to allign elements in the div horizontally*/
     border-bottom: 2px solid black;
 
 }
